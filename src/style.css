@@ -72,6 +72,8 @@ header {
   border-radius: 0;
 }
 
+
+
 .logo * {
   padding: 0.2rem;
 }
@@ -395,7 +397,6 @@ footer {
   /* text-decoration: none; */
   font-weight: 200;
   display: block;
-  text-align: center;
   align-items: center;
   margin-bottom: 3rem;
 }
@@ -411,13 +412,15 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.878);
   padding: 0;
 }
-.heading-wrapper h2 {
+.heading-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 1rem 0 0;
   background-color: rgba(177, 0, 0, 0.85);
   flex: 1;
   font-size: 3rem;
   font-weight: 100;
-  display: block;
   border-right: 0.2rem solid rgba(206, 138, 36, 0.9);
 }
 
@@ -432,26 +435,34 @@ footer {
   background-color: rgba(177, 0, 0, 0.85);
 }
 
-/* .heading-icon img  {
-    width: 70%;
-    transform: skew(8deg);
-  border-radius: 1rem 0 0;
-  height: 8rem;
-  background-color: rgba(177, 0, 0, 0.85);
-
-} */
 
 
 
 
 
 
-.heading-wrapper > .p-wrapper {
+.heading-wrapper > .heading-body {
   background-color: rgba(0, 128, 128, 0.821);
-  flex: 6;
+  flex: 10;
   border-radius: 0 0 1rem;
 }
 
-.p-wrapper > p {
+.heading-body > p {
   transform: skew(8deg);
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  font-weight: 200;
+  padding: 1rem;
+}
+.heading-body h3 {
+  padding-top: 1rem;
+};
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }
