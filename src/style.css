@@ -133,22 +133,20 @@ main {
   padding-bottom: 10rem;
 }
 
-
 /* REUSEABLE TEXT SECTION */
 .text-section {
-    padding: 2rem 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 84vw;
-    border: 1px solid rgba(255, 255, 255, 0.501);
-    background-color: rgba(255, 255, 255, 0.547);
-    margin-bottom: 4rem;
-    font-size: 1.3rem;
-    line-height: 1.8rem;
-    font-weight: 200;
-    border-radius: 1rem;
-
+  padding: 2rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 84vw;
+  border: 1px solid rgba(255, 255, 255, 0.501);
+  background-color: rgba(255, 255, 255, 0.547);
+  margin-bottom: 4rem;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  font-weight: 200;
+  border-radius: 1rem;
 }
 
 /* INTRODUCTION SECTION STYLING */
@@ -278,7 +276,6 @@ footer {
   padding: 0;
 }
 
-
 /* BLOG POST STYLES */
 #blog-main {
   display: flex;
@@ -333,6 +330,57 @@ footer {
   padding: 2rem 3rem 4rem;
 }
 
+/* BADGE STYLING */
+.badge {
+  background-color: rgba(177, 0, 0, 0.746);
+  width: 12rem;
+  height: 12rem;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0;
+  border: 2px solid rgba(246, 255, 255, 0.725);
+  align-items: center;
+  font-size: 4.5rem;
+  /* transform: rotate(35deg); */
+  color: white;
+}
+
+.badge-left,
+.badge-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 20rem;
+  height: 12rem;
+  padding: 0;
+  transform: rotate(35deg);
+}
+
+.badge-left {
+  border-right: 5px dotted rgba(0, 128, 128, 0.565);
+  margin-right: 0.5rem;
+  background: rgba(206, 138, 36, 0.9);
+  margin-right: 1rem;
+}
+.badge-left p,
+.badge-right p {
+  transform: rotate(-35deg);
+}
+
+.badge-right {
+  border-left: 5px dotted rgba(206, 138, 36, 0.9);
+  width: 2000px;
+  height: 8rem;
+  /* margin-left: 0.5rem; */
+
+  background-color: teal;
+}
+/* .badge-right */
+
 /* REUSEABLE HEADING STYLES */
 
 .headings-group {
@@ -369,10 +417,35 @@ footer {
   flex: 1;
   font-size: 3rem;
   font-weight: 100;
-
   display: block;
   border-right: 0.2rem solid rgba(206, 138, 36, 0.9);
 }
+
+/* THIS IS A WEIRD SELECTOR - REVISIT */
+.heading-image,
+.heading-image img {
+  height: 8rem;
+  border-radius: 1rem 0 0;
+  padding: 0;
+  border-right: 1px solid #ffffff87;
+  opacity: 0.95;
+  background-color: rgba(177, 0, 0, 0.85);
+}
+
+/* .heading-icon img  {
+    width: 70%;
+    transform: skew(8deg);
+  border-radius: 1rem 0 0;
+  height: 8rem;
+  background-color: rgba(177, 0, 0, 0.85);
+
+} */
+
+
+
+
+
+
 .heading-wrapper > .p-wrapper {
   background-color: rgba(0, 128, 128, 0.821);
   flex: 6;
