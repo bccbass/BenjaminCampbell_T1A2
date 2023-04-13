@@ -13,25 +13,43 @@
   </head>
   <body>
     <header>
-      <a href="index.html" id="logo-anchor-wrapper">
-        <div class="logo">
-          <h1>Benjamin Campbell</h1>
-          <h2><em>Nascent Full Stack Developer</em></h2>
-        </div>
-      </a>
+      <div class="header-logo-group">
+        <a id="badge-anchor-wrapper" href="index.html">
+          <div class="badge" id="badge">
+            <div class="badge-left"><p>B</p></div>
+            <div class="badge-right"><p>C</p></div>
+          </div>
+        </a>
+        <a href="index.html" id="logo-anchor-wrapper">
+          <div class="logo">
+            <h1>Benjamin Campbell</h1>
+            <h2><em>Nascent Full Stack Developer</em></h2>
+          </div>
+        </a>
+      </div>
       <nav>
         <ul>
-          <li class=""><a href="projects.html">Projects</a></li>
-          <li class=""><a href="blog.html">Blog</a></li>
-          <li class=""><a href="now.html">Now</a></li>
+          <li class="">
+            <a href="projects.html"
+              ><i class="material-symbols-outlined">settings</i>
+              <div>Projects</div></a
+            >
+          </li>
+          <li class="">
+            <a href="blog.html"
+              ><i class="material-symbols-outlined">edit</i>
+              <div>Blog</div></a
+            >
+          </li>
+          <li class="">
+            <a href="now.html"
+              ><i class="material-symbols-outlined">schedule</i>
+              <div>Now</div></a
+            >
+          </li>
         </ul>
       </nav>
     </header>
-
-    <div class="badge">
-      <div class="badge-left"><p>B</p></div>
-      <div class="badge-right"><p>C</p></div>
-    </div>
 
     <section class="introduction text-section">
       <img id="portrait" src="media/bluemountainportrait.jpg" alt="" />
@@ -56,9 +74,11 @@
           in the field; there is the possibility to build something great in the
           context of a group of people working together towards a common goal.
         </p>
-        <a class="button" href="media/Benjamin Campbell Resume 2022.pdf"
-          >Resumé <i class="material-symbols-outlined">download</i></a
-        >
+        <div class="icon-button">
+          <a href="media/Benjamin Campbell Resume 2022.pdf"
+            >Resumé<i class="material-symbols-outlined">download</i></a
+          >
+        </div>
       </article>
       <!-- <figure class="techstack">
     <figcaption>Current working techstack:</figcaption>
@@ -76,7 +96,6 @@
           <h2>Projects</h2>
           <!-- <p id="projects-overview">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quibusdam minus minima corrupti ipsum tenetur ducimus saepe deserunt fugiat eius explicabo tempore, dolor voluptatum distinctio temporibus laudantium, sunt unde doloremque.
-            Sint placeat inventore quibusdam id quaerat beatae et quod, expedita, facilis odit a vel debitis non quis, voluptatibus itaque ipsa cupiditate dicta sequi deleniti modi ipsum? Est deserunt alias repellendus!
           </p> -->
         </section>
       </a>
