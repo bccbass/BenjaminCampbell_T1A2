@@ -34,20 +34,20 @@
       <nav>
         <ul>
           <li class="active-page">
-            <a href="projects.html"
-              ><i class="material-symbols-outlined">settings</i>
+            <a href="projects.html">
+              <i class="material-symbols-outlined">settings</i>
               <div>Projects</div></a
             >
           </li>
           <li class="">
-            <a href="blog.html"
-              ><i class="material-symbols-outlined">edit</i>
-              <div>Blog</div></a
-            >
+            <a href="blog.html">
+              <i class="material-symbols-outlined">edit</i>
+              <div>Blog</div>
+            </a>
           </li>
           <li class="">
-            <a href="now.html"
-              ><i class="material-symbols-outlined">schedule</i>
+            <a href="now.html">
+              <i class="material-symbols-outlined">schedule</i>
               <div>Now</div></a
             >
           </li>
@@ -55,32 +55,22 @@
       </nav>
     </header>
 
-    <main>
+    <main id="projects-main">
       <div class="text-section">
         <h2>Projects</h2>
         <p>
-          I started coding in March of 2022. Since then I have spent most of my
-          time learning Javascript. I've been tryign to go through some of the
-          time-tested projects of new developers: a DOM oriented ToDo list, then
-          a Mongo/Mongoose/Express ToDo list. Making small web apps using API's
-          like a weather app or text-speech. etc etc Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Mollitia excepturi nobis accusamus eos
-          at commodi blanditiis deserunt ab cupiditate perferendis. At rerum
-          itaque error. Hic incidunt quos quam odio animi! Facilis perferendis
-          quo tempore voluptate rerum repellendus maxime ipsa velit reiciendis
-          incidunt amet, ullam enim ad accusamus vero at temporibus, libero
-          corporis excepturi consectetur vel iure quasi pariatur. Aut, facere!
+          I began coding in March of 2022. Since then I have spent most of my
+          time learning Javascript. I've been attempting to go through some of
+          the time-tested projects of new developers: a DOM oriented ToDo list,
+          then a Mongo/Mongoose/Express ToDo list. Making small web apps using
+          API's like a weather app or text-speech. In the fall of 2022, I've
+          began working on the advent of code from the previous year. I made it
+          through to day 11, solving the challenges in both JavaScript and
+          typescript. I am currently ideating on a handful of projects while I
+          continue growing as a developer to hopefully meet the demands to see
+          them through...
         </p>
       </div>
-
-      <!-- <figure class="techstack">
-    <figcaption>Current working techstack:</figcaption>
-    <img class="techstack-logo" src="media/techstacklogos/javascript-39395.png" alt="">
-    <img src="media/techstacklogos/html5-logo-31821.png" alt="" class="techstack-logo">
-    <img src="media/techstacklogos/express-logo.webp" alt="" class="techstack-logo">
-    <img src="media/techstacklogos/bootstrap-logo-shadow.png" alt="" class="techstack-logo">
-
-</figure> -->
 
       <ul class="headings-group">
         <li>
@@ -93,11 +83,25 @@
             <div class="heading-body">
               <h3>Vanilla Javascript Website</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                inventore minus aperiam pariatur non necessitatibus. Earum ad
-                architecto placeat est molestiae accusantium! Velit voluptatem
-                rem labore. Quos dolore laborum debitis?
+                This is a personal website designed using vanilla JavaScript,
+                HTML, and CSS. My goal was to make it fully responsive and
+                dynamic. I implemented JavaScript for the NAV bar, the image
+                carousel, and the YouTube thumbnail loading functionality.
               </p>
+              <div class="project-links">
+                <a
+                  target="_blank"
+                  href="https://github.com/bccbass/bcsiterepo"
+                  class="button"
+                  >code</a
+                >
+                <a
+                  target="_blank"
+                  href="https://benjamincampbell.com"
+                  class="button"
+                  >site</a
+                >
+              </div>
             </div>
           </div>
         </li>
@@ -111,11 +115,26 @@
             <div class="heading-body">
               <h3>Whats the weather?</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                inventore minus aperiam pariatur non necessitatibus. Earum ad
-                architecto placeat est molestiae accusantium! Velit voluptatem
-                rem labore. Quos dolore laborum debitis?
+                A simple API website to find the weather for a given city
+                entered in the search box. The query is sent to both a weather
+                app to retrieve local weather, as well as a general query to
+                unsplash to supply a background image relating to the requested
+                location.
               </p>
+              <div class="project-links">
+                <a
+                  target="_blank"
+                  href="https://github.com/bccbass/weather_API"
+                  class="button"
+                  >code</a
+                >
+                <a
+                  target="_blank"
+                  href="https://weather-api-chi-sooty.vercel.app/"
+                  class="button"
+                  >site</a
+                >
+              </div>
             </div>
           </div>
         </li>
@@ -129,29 +148,57 @@
             <div class="heading-body">
               <h3>So many Todo Lists...</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                inventore minus aperiam pariatur non necessitatibus. Earum ad
-                architecto placeat est molestiae accusantium! Velit voluptatem
-                rem labore. Quos dolore laborum debitis?
+                I understand why a Todo list is a classic part of the coding
+                pedagocical canon. It presents so many great challenges dealing
+                with data structures, interface and logical functionality. I
+                made my first vanilla javascript todo list with a code along
+                over the summer of 2022. After spending a bit of time with
+                MongoDB/Mongooose, Express and EJS I took a shot at creating a
+                todo list that utilized a database to give inputted data more statefulness.
               </p>
+              <div class="project-links">
+                <a
+                  target="_blank"
+                  href="https://github.com/bccbass/TodoListMongoDB"
+                  class="button"
+                  >code</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/bccbass/simpletodolist"
+                  class="button">code</a>
+              </div>
             </div>
           </div>
         </li>
         <li>
           <div class="heading-wrapper">
             <div class="heading-tab">
-              <i class="material-symbols-outlined" style="font-size: 5rem"
-                >text_to_speech</i
+              <i class="material-symbols-outlined" style="font-size: 5rem">
+                text_to_speech</i
               >
             </div>
             <div class="heading-body">
               <h3>Text to Speech App</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                inventore minus aperiam pariatur non necessitatibus. Earum ad
-                architecto placeat est molestiae accusantium! Velit voluptatem
-                rem labore. Quos dolore laborum debitis?
+                This was another fun code along presented by Brad Traversy on
+                his youtube channel. It utilizes the text synthesis API. I did
+                my best at some quick and simple styling inspired by TRON.
               </p>
+              <div class="project-links">
+                <a
+                  target="_blank"
+                  href="https://github.com/bccbass/text_to_speach"
+                  class="button"
+                  >code</a
+                >
+                <a
+                  target="_blank"
+                  href="https://text-to-speach-ix2i38fp4-bccbass.vercel.app/"
+                  class="button"
+                  >site</a
+                >
+              </div>
             </div>
           </div>
         </li>
@@ -163,8 +210,8 @@
           <li>Javascript</li>
           <li>Typescript</li>
           <li>HTML5</li>
-          <li>CSS</li>
-          <li>Node</li>
+          <li>CSS3</li>
+          <li>Node.js</li>
         </ul>
         <h3>Current frameworks:</h3>
         <ul>
@@ -172,16 +219,26 @@
           <li>Bootstrap</li>
         </ul>
       </div>
-  
     </main>
 
     <footer>
       <section class="socials">
         <div class="socials-wrapper">
-          <!-- <p>Let's stay in touch!</p> -->
-          <a href=""><img src="media/linkedin (1).svg" alt="" /></a>
-          <a href=""><img src="media/github-mark.png" alt="" /></a>
-          <a href=""><img src="media/email-logo.png" alt="" /></a>
+          <a
+            href="https://www.linkedin.com/in/benjamin-campbell-91b663241/"
+            target="_blank"
+            rel="noreferer noopener"
+            ><img src="media/linkedin.png" alt=""
+          /></a>
+          <a
+            href="https://github.com/bccbass"
+            target="_blank"
+            rel="noreferer noopener"
+            ><img src="media/github-mark.png" alt=""
+          /></a>
+          <a href="mailto:bccbass@gmail.com"
+            ><img src="media/email-logo.png" alt=""
+          /></a>
         </div>
       </section>
       <p>&copy2023 Benjamin Campbell</p>

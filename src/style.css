@@ -21,7 +21,13 @@ body * {
   opacity: 0.8;
   border-radius: 0.2rem;
   transition: 300ms;
-  margin: 0.3rem 0;
+  width: min-content;
+}
+
+
+.button:hover {
+  opacity: 0.95;
+  cursor: pointer;
 }
 
 .active-page {
@@ -30,19 +36,13 @@ body * {
   animation: fade-in forwards 0.3s ease-in-out;
 }
 
-.button:hover {
-  opacity: 0.95;
-  cursor: pointer;
-  /* transform: translateX(1px ) translateY(-1px); */
-}
-
 body {
   background: rgba(255, 255, 206, 0.409)
     url("media/joe-woods-4Zaq5xY5M_c-unsplash.jpg");
   background-size: cover;
   background-blend-mode: screen;
   font-family: Raleway, monospace;
-  color: rgb(101, 101, 101);
+  color: rgb(78, 78, 78);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,6 +77,8 @@ header {
   height: 13rem;
   padding: 0;
 }
+
+
 .header-logo-group {
   display: flex;
   justify-content: center;
@@ -123,7 +125,7 @@ nav ul {
   justify-content: space-around;
   width: 100%;
   padding: 0;
-  /* margin-right: 2rem; */
+  margin-right: -100rem;
 }
 
 nav ul li {
@@ -161,13 +163,21 @@ nav ul li a:hover {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
+.icon-button * {
+padding: 0;
+}
+
 .icon-button {
   display: flex;
   justify-content: flex-end;
+  width: 100%;
+  padding: 0;
 }
 .icon-button a i {
   transform: translateY(0.2rem);
+  padding: 0 .4rem .5rem;
 }
+
 
 main {
   padding-bottom: 6rem;
@@ -216,7 +226,7 @@ main {
 }
 /* INTRODUCTION SECTION STYLING */
 
-.introduction h2 {
+#introduction h2 {
   font-size: 2.4rem;
   margin: 0.6rem 0 0.8rem;
 }
@@ -228,11 +238,12 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.501);
 }
 
-.introduction a {
-  display: inline-block;
+#introduction .icon-button a {
+  display: block;
   color: rgb(0, 128, 128);
   text-decoration: none;
 }
+
 
 /* Index Main Section Styles */
 
@@ -273,42 +284,10 @@ main > .section-anchor:hover {
 
 .projects {
   background-color: rgba(206, 138, 36, 0.85);
-
   border-radius: 1.5rem 0 0 0;
   transform: skew(-8deg);
 }
 
-/* .projects p {
-  position: absolute;;
-  opacity: 0;
-  top: 1rem;
-  left: 1rem;
-  padding: 1rem;
-  color: grey;
-  transition: 1s;
-  width: 90%;
-  height: 90%;
-}
-.projects p:hover{
-  opacity: 1;
-}
-
-.projects p:hover ~ h2 {
-  opacity: 0;
-} */
-
-/* 
-
-#projects-overview {
-    font-size: 1rem;
-    display: none ;
-    opacity: .5;
-}
-.projects:hover ~ #projects-overview{
-    opacity: 1;
-    font-size: 5rem;
-    color: purple;
-} */
 
 .blog {
   transform: skew(-8deg);
@@ -328,7 +307,6 @@ footer {
   padding: 0;
   font-size: 0.8rem;
   margin: 1rem 0 0;
-
   text-align: center;
   font-weight: 200;
   bottom: 0.3rem;
@@ -362,6 +340,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 9rem;
+  width: 100%;
 }
 .blogpost * {
   margin: 0;
@@ -393,11 +372,14 @@ footer {
 .blogpost-heading h3 {
   font-weight: 200;
   font-size: 1.2rem;
+  width: 100%;
 }
 .blogpost-heading h4 {
   font-weight: 200;
   opacity: .8;
   font-size: 1rem;
+  width: 100%;
+
 }
 .blogpost-heading div{
   display: flex;
@@ -447,7 +429,6 @@ footer {
 }
 
 #badge {
-  /* scale: .5; */
   transform: translateX(.7rem);
 }
 
@@ -541,6 +522,7 @@ footer {
 }
 
 .heading-tab {
+  flex: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -548,6 +530,7 @@ footer {
   font-size: 3rem;
   font-weight: 100;
 }
+
 
 .heading-image {
   padding: 0;
@@ -561,21 +544,26 @@ footer {
   padding: 0;
 }
 
+
 .heading-wrapper > .heading-body {
   background-color: rgba(0, 128, 128, 0.821);
   flex: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .heading-body h3 {
   font-size: 1rem;
-  padding: 0;
+  padding: .5rem 0 ;
   transform: skew(8deg);
-  margin-left: 0.5rem;
   line-height: 1.4rem;
 }
 .heading-body a {
   display: block;
-  text-align: end;
   font-size: 0.9 rem;
+  margin: .3rem 1rem;
+  padding: .3rem .5rem;
 }
 
 .heading-body p {
@@ -587,10 +575,20 @@ footer {
   font-weight: 200;
   padding: 0 1rem;
 }
-.heading-body h3 {
-  padding-top: 1rem;
+
+
+.project-links  {
+  display: flex;
+  justify-content: flex-start;
+  transform: skew(8deg);
+  padding: 0;
 }
 
+#projects-main  i {
+  transform: translateY(-.1rem);
+}
+
+/* Image section layout for NOW page */
 #image-container {
   display: flex;
   flex-wrap: wrap;
@@ -611,6 +609,7 @@ footer {
   border-radius: 1rem;
 }
 
+
 @keyframes fade-in {
   from {
     background-color: rgba(255, 255, 255, 0);
@@ -620,19 +619,82 @@ footer {
   }
 }
 
+
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 530px) {
+  #portrait {
+    width: 40%;
+  }
+
+
+}
+@media only screen and (min-width: 650px) {
+header {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 24vw;
+  padding: 0;
+}
+.header-logo-group {
+  width: min-content;
+}
+nav {
+  width: 35vw;
+};
+#introduction {
+  border: 3px solid red;
+  margin: 20rem;
+}
+
+}
+
+@media only screen and (min-width: 700px) {
+  header {height: 18vw}
+  .logo {
+    display: flex;
+}
+#badge {
+  /* scale: .5; */
+  transform: translateX(.7rem);
+}
+
+.site-areas {
+display: flex;
+}
+
+}
+
+
 @media only screen and (min-width: 900px) {
+  #introduction h2 {
+    order: 2;
+  }
+  #introduction #portrait {
+    order: 1;
+  }
+
+  #introduction  p{
+    order: 3;
+  }
+  #introduction  .icon-button{
+    order: 4;
+    /* text-align: end; */
+    };
   header {
     flex-direction: row;
-    height: 8rem;
+    height: 9rem;
     justify-content: space-between;
 
-    border: 3px solid red;
   }
 
   .header-logo-group {
     align-items: center;
     justify-content: flex-start;
-    width: 0;
+    width: 50vw;
   }
   .logo {
     display: flex;
@@ -640,14 +702,15 @@ footer {
 
   #badge-anchor-wrapper {
     margin: 1rem;
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
   }
 
   nav ul li * {
     margin-top: 0.6rem;
   }
   nav ul {
+    transform: translateX(0);
     width: 24vw;
   }
   nav ul li a {
@@ -681,40 +744,3 @@ footer {
     display: block;
   }
 }
-/* 
-@media only screen and (max-width: 480px) {
- body {
-  width: 100vw;
- }
-
-  header {
-    flex-direction: column;
-    border: 8px solid red;
-  }
-  .logo{
-    display: none;
-  }
-  #badge-anchor-wrapper {
-}
-#badge {
-}
-.header-logo-group {
-  flex-direction: column;
-margin: 0;
-}
-
-nav ul li a div{
-width: 25vw;
-
-color: red
-}
-.material-symbols-outlined{
-  scale: .9;
-}
-
-
-.introduction, .text-section {
-  width: 80px}
-
-
-} */
