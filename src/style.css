@@ -200,7 +200,7 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   width: 90vw;
   /* width: 84vw; */
@@ -226,11 +226,17 @@ main {
   padding: 0.5rem 1rem;
 }
 
-
+#projects-main .text-section, #now-main .text-section{
+  align-items: flex-start;
+  }
 /* INDEX STYLES */
 
 /* INTRODUCTION SECTION STYLING */
 
+
+/* #intro-tablet-h2 {
+  display: none;
+} */
 
 #introduction h2 {
   font-size: 2.4rem;
@@ -341,9 +347,7 @@ footer {
 }
 
 /* BLOG POST STYLES */
-#blog-index-main .text-section {
-  align-items: center;
-  }
+
 
   #blog-index-main .heading-body h3 {
     text-align: center;
@@ -677,6 +681,10 @@ nav ul {
   margin-bottom: .1rem;
 }
 
+nav ul li a {
+  width: 3rem
+};
+
 #introduction {
   flex-direction: row;
   justify-content: flex-start
@@ -697,17 +705,17 @@ nav ul {
 }
 #introduction  .icon-button{
   order: 4;
-  /* text-align: end; */
   }
-#site-areas {
+
+  #site-areas {
   display: flex;
   flex-direction: row;
-  /* padding-bottom: 8rem; */
-  transform: translateX(-2rem);
+  transform: translateX(-1.5vw);
 }
 
 #site-areas > .section-anchor {
   width: 30vw;
+  max-height: 15rem;
 }
 
 #site-areas, .headings-group, #tech-stack, #image-container {
@@ -729,9 +737,7 @@ nav ul {
   height: 10%;
 }
 
-#blog-index-main .text-section {
-  align-items: center;
-  }
+
 
   #blog-index-main .heading-body h3 {
       font-size: 1.5rem;
@@ -756,6 +762,8 @@ nav ul {
   }
 #logo-anchor-wrapper {
   display: flex;
+  padding: 0 .5rem;
+  width: fit-content;
 }
 .logo h1{
   font-size: 1.7rem;
@@ -767,7 +775,7 @@ nav ul {
 }
 
 @media only screen and (min-width: 900px) {
-
+/* 
   header {
     flex-direction: row;
     height: 9rem;
@@ -823,5 +831,5 @@ nav ul {
 
   .heading-body p {
     display: block;
-  }
+  } */
 }
