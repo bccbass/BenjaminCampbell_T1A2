@@ -42,3 +42,26 @@ In an effort to save time/code I used reusable styling classes -  this seemed to
 &nbsp;
 ### *Tech Stack*
 Although I was tempted at times to use JavaScript for extended functionality and layout, I stuck to using pure HTML and CSS. This was a welcome challenge that forced me to grow my skills and find creative solutions for the problems that I encountered. 
+
+&nbsp;
+&nbsp;
+&nbsp;
+## *Website Screenshots:*
+### Index
+![index](./docs/portfolio-screenshots/homepage.png)
+&nbsp;
+
+### Projects
+![projects](./docs/portfolio-screenshots/projects.html.png)
+&nbsp;
+
+### Blog Index
+![blog](./docs/portfolio-screenshots/blogindex.html.png)
+&nbsp;
+
+### Blog Post
+![blogpost](./docs/portfolio-screenshots/blogpost.png)
+&nbsp;
+
+### Now
+![now](./docs/portfolio-screenshots/now.html.png)
